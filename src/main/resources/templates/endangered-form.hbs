@@ -1,3 +1,10 @@
+{{#partial "title"}}Endangered{{/partial}}
+
+{{#block "styles"}}
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../css/styles.css">
+{{/block}}
+
 {{#partial "content"}}
     <div class="jumbotron">
         <form action="/Endangered/new" method="post" name="endangered">
@@ -14,7 +21,7 @@
                 <label for="health">Health
                     <select name="health">
                         <option>Ill</option>
-                        <option>Okay</option>
+                        <option>Unknown</option>
                         <option>Healthy</option>
                     </select>
                 </label>
@@ -40,10 +47,12 @@
             <div class="form-group">
                 <label for="location">Location
                     <select name="location">
-                        <option>By the riverside</option>
-                        <option>Near the forest</option>
-                        <option>By the mugumo tree</option>
-                        <option>Near the waterfall</option>
+                        <option>Area Section 001</option>
+                        <option>Area Section 002</option>
+                        <option>Area Section 003</option>
+                        <option>Area Section 004</option>
+                        <option>Area Section 005</option>
+                        <option>Area Section 006</option>
                     </select>
                 </label>
             </div>

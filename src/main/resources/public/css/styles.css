@@ -1,6 +1,10 @@
 body{
     background-color: grey;
     text-align : center;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
 }
 img{
     border-radius : 400px;
@@ -19,6 +23,8 @@ a{
 .jumbotron{
     border-radius : 100px;
     border: double;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: black;
 
 }
 .success{
@@ -132,4 +138,24 @@ a{
     width: 100%;
     text-decoration: none;
     /* transition: 0s; */
+}
+
+
+.text-warning {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.col-md-6 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.form-group {
+    width: 100%;
 }

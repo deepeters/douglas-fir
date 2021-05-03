@@ -27,7 +27,6 @@ a{
 }
 
 #navbar {
-    background: transparent;
     color: red;
     align-items: end;
     top: 0;
@@ -36,6 +35,7 @@ a{
     width: 100%;
     z-index: 10;
     text-decoration: none;
+    font-family: SansSerif;
 }
 
 .nav-wrapper {

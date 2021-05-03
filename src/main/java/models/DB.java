@@ -9,4 +9,3 @@ public class DB {
     //private static String connectionString = "jdbc:postgresql://ec2-52-71-231-180.compute-1.amazonaws.com:5432/d7ibdughsrddip";
     //public static Sql2o sql2o = new Sql2o(connectionString, "ksqytqouusqfct", "4cbd75780f8534cc6bd66e462eadcfc7337589ea905d9bc39c7a54826b37189b");
 }
-}

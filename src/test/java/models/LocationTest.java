@@ -7,7 +7,7 @@ public class LocationTest {
     @Test
     public void Location_instanciatesCorrectly(){
         Location testLocation = new Location("By the river");
-        assertEquals(true,testLocation instanceof location);
+        assertEquals(true,testLocation instanceof Location);
     }
     @Test
     public void Location_getName(){

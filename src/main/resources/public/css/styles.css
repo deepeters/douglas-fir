@@ -1,0 +1,27 @@
+body{
+    background-color: grey;
+    text-align : center;
+}
+img{
+    border-radius : 200px;
+
+}
+.col-md-4{
+    border: double;
+    border-radius : 100px;
+
+}
+a{
+    color: grey;
+    font-size : 20px;
+    text-align : center ;
+}
+.jumbotron{
+    border-radius : 100px;
+    border: double;
+
+}
+.success{
+    color: green;
+    font-size : 50px;
+}

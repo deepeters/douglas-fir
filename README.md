@@ -16,14 +16,23 @@ This is a Java-Spark Application that allows Rangers to track wildlife sightings
 * In the command prompt, navigate to cloned folder and use the following command to run the app `$ gradle run`
 * Open the browser and enter the address `localhost:4567`
 
+* * Install PostgreSQL. for help installing ==> https://www.youtube.com/watch?v=-LwI4HMR_Eg
+  * Open up your terminal and type the following commands(only works if postgreSQL is installed)
+  * 
+          psql
+          
+          CREATE DATABASE wildlife_tracker;
+          
+          \c wildlife_tracker;
+          
+          CREATE TABLE animals 
+          (id serial PRIMARY KEY, name varchar, age varchar,health varchar, type varchar);
+          
+          CREATE TABLE sightings
+          (id serial PRIMARY KEY, animalId int, location varchar, rangerName varchar, sightingDate timestamp);
+          
+          CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 
-# BDD
-
-## BDD
-| Input                                                         | Output                      |
-|---------------------------------------------------------------|-----------------------------|
-|  |                   |
-|  | |
 
 
 # Contact Information:
@@ -34,10 +43,14 @@ This is a Java-Spark Application that allows Rangers to track wildlife sightings
 
 ### Technology Used
 1. Java
+2. HTML
+3. CSS
 
 ### Frameworks Used
 1. Gradle
 2. Spark
+3. Maven
+4. Junit
 
 ### Libraries Used
 1. Bootstrap

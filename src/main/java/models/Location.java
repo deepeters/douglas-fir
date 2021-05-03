@@ -8,7 +8,7 @@ public class Location{
     int id;
     String Location ;
 
-    public location(String location) {
+    public Location(String location) {
         Location = location;
     }
 
@@ -34,13 +34,13 @@ public class Location{
                     .executeAndFetch(location.class);
         }
     }
-    public static location find(int id) {
+    public static Location find(int id) {
         String sql = "SELECT * FROM location WHERE id = :id";
         try (Connection con = DB.sql2o.open()) {
             location Location = con.createQuery(sql)
                     .addParameter("id", id)
                     .throwOnMappingFailure(false)
-                    .executeAndFetchFirst(location.class);
+                    .executeAndFetchFirst(Location.class);
             return Location;
         }
     }

@@ -4,7 +4,7 @@ import java.util.List;
 import org.sql2o.*;
 
 
-public class Endangered implements methods {
+public class Endangered implements Methods {
     public int id;
     public String name;
     public String health;

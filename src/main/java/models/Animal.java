@@ -4,7 +4,7 @@ import org.sql2o.*;
 import java.util.List;
 import java.util.Objects;
 
-public  class Animal implements methods{
+public  class Animal implements Methods{
     int id;
     String name;
     int sightingId;

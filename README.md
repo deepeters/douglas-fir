@@ -25,11 +25,11 @@ This is a Java-Spark Application that allows Rangers to track wildlife sightings
           
           \c wildlife_tracker;
           
-          CREATE TABLE animals 
-          (id serial PRIMARY KEY, name varchar, age varchar,health varchar, type varchar);
+          CREATE TABLE animals (id serial PRIMARY KEY, name varchar, sightingid varchar); 
           
-          CREATE TABLE sightings
-          (id serial PRIMARY KEY, animalId int, location varchar, rangerName varchar, sightingDate timestamp);
+          CREATE TABLE endangered (id serial PRIMARY KEY ,name varchar,age varchar,health varchar, ranger varchar);
+          
+          CREATE TABLE sightings (id serial PRIMARY KEY ,ranger varchar,date timestamp, location varchar);
           
           CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 

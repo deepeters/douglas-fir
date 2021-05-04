@@ -1,10 +1,14 @@
-import models.*;
+import models.Animal;
+import models.Endangered;
+import models.Ranger;
+import models.Sighting;
+import spark.ModelAndView;
+import spark.template.handlebars.HandlebarsTemplateEngine;
+
 import java.util.HashMap;
 import java.util.Map;
-import spark.ModelAndView;
-import org.sql2o.Sql2o;
+
 import static spark.Spark.*;
-import spark.template.handlebars.HandlebarsTemplateEngine;
 
 public class App{
     public static void main(String[] args) {
@@ -52,13 +56,13 @@ public class App{
             return new ModelAndView(model,"animal.hbs");
         }, new HandlebarsTemplateEngine());
         // get endangered
-        get("/Endangered/form",(request, response) -> {
+        get("/endangered/form",(request, response) -> {
             Map<String,Object>model = new HashMap<>();
             model.put("animals",Animal.allAnimals());
             model.put("rangers",Ranger.all());
-            return new ModelAndView(model,"Endangered-form.hbs");
+            return new ModelAndView(model,"endangered-form.hbs");
         },new HandlebarsTemplateEngine());
-        post("/Endangered/new",(request, response) -> {
+        post("/endangered/new",(request, response) -> {
             Map<String,Object>model = new HashMap<>();
             String animalName = request.queryParams("Name");
             String health = request.queryParams("health");
@@ -69,7 +73,7 @@ public class App{
             endangered.save();
             return new ModelAndView(model,"success.hbs");
         },new HandlebarsTemplateEngine());
-        get("/Endangered/new",(request, response) -> {
+        get("/endangered/new",(request, response) -> {
             Map<String,Object>model = new HashMap<>();
             model.put("animals",Endangered.all());
             return new ModelAndView(model,"endangered.hbs");

@@ -7,9 +7,7 @@ This is a Java-Spark Application that allows Rangers to track wildlife sightings
 <img src="/douglas-fir.png">
 
 ### Setup Instructions
-# User Stories
 
-### Setup
 * To run the application, first install the java development kit from `https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
 * Install gradle.
 * Next clone the project using `$ git clone https://github.com/deepeters/douglas-fir` to your preferred folder.
@@ -34,6 +32,13 @@ This is a Java-Spark Application that allows Rangers to track wildlife sightings
           CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 
 
+### How to Use - Behaviour
+* Add an Endangered Animal
+* Add other Animals (Non-Endangered)
+* Add a Sighting of an Animal that has been Added before, otherwise repeat the previous steps
+* See added Animals; endangered, non-endangered and all as well
+* See Sightings Recorded and time recorded
+
 
 # Contact Information:
 ### Author: [DENNIS NJENGA](https://github.com/deepeters)
@@ -51,6 +56,7 @@ This is a Java-Spark Application that allows Rangers to track wildlife sightings
 2. Spark
 3. Maven
 4. Junit
+5. Handlebars
 
 ### Libraries Used
 1. Bootstrap

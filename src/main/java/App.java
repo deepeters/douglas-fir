@@ -27,6 +27,13 @@ public class App{
             Map<String,Object> model = new HashMap<>();
             return new ModelAndView(model,"index.hbs");
         },new HandlebarsTemplateEngine());
+
+        //creating an about page
+        get("/about",(request, response) ->{
+            Map<String,Object> model = new HashMap<>();
+            return new ModelAndView(model,"about.hbs");
+        },new HandlebarsTemplateEngine());
+
         // get new animals
         get( "/animal/form", (request, response) -> {
             Map<String,Object> model = new HashMap<>();
@@ -55,6 +62,7 @@ public class App{
             model.put("animals",Animal.allAnimals());
             return new ModelAndView(model,"animal.hbs");
         }, new HandlebarsTemplateEngine());
+
         // get endangered
         get("/endangered/form",(request, response) -> {
             Map<String,Object>model = new HashMap<>();

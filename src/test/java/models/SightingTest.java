@@ -22,9 +22,9 @@ public class SightingTest {
 
 
     public Sighting setupNewSighting(){
-        return new Sighting("Zone A", "Henry");
+        return new Sighting("Dennis", "Area Section 006");
     }
     public Sighting setupOtherSighting(){
-        return new Sighting("Zone B", "Alex");
+        return new Sighting("Dennis", "Area Section 006");
     }
 }
